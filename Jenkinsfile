@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                sh chmod +x clone.sh build.sh test.sh deploy.sh
+                sh 'chmod +x clone.sh build.sh test.sh deploy.sh'
                 sh './clone.sh'
             }
         }
