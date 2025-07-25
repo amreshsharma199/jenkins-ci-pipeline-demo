@@ -8,6 +8,7 @@ pipeline {
             steps {
                 sh 'chmod +x clone.sh build.sh test.sh deploy.sh'
                 sh './clone.sh'
+                echo 'auto run ho raha hai polls scm se detect karke'
             }
         }
         stage('Build') {
